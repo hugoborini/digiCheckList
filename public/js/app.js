@@ -5,6 +5,7 @@ let input = document.querySelector("input")
 let button = document.querySelector("button")
 let body = document.querySelector(".body")
 let checks = document.querySelectorAll(".check")
+let container = document.querySelector(".container")
 
 console.log(add);
 console.log(containerAdd);
@@ -12,6 +13,9 @@ console.log(containerAdd);
 add.addEventListener("click", ()=>{
     containerAdd.classList.toggle("show")
     plus.classList.toggle("plusToCross")
+    setTimeout(() => {
+        container.classList.toggle("showContainer")
+    }, 500);
 })
 
 
