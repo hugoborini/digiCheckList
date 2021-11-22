@@ -14,6 +14,11 @@
           <actionMethod actionName="ajaxsup"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
+        <controllerFile controllerName="Api">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="ajax"/>
+          <actionMethod actionName="ajaxsup"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory enabled="false"/>
       <layoutsDirectory enabled="false"/>
@@ -37,6 +42,15 @@
             <viewScriptFile forActionName="ajaxDel"/>
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="ajaxsup"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Api">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Api">
+            <viewScriptFile forActionName="ajax"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Api">
             <viewScriptFile forActionName="ajaxsup"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>

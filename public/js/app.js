@@ -17,7 +17,7 @@ add.addEventListener("click", ()=>{
 
 button.addEventListener("click", ()=>{
     $.ajax({
-        url: "/digiCheckList/public/index/ajax",
+        url: "/digiCheckList/public/api/ajax",
         type: "post",
         data: {todo: input.value},
         success:function(data){
@@ -46,7 +46,7 @@ function checkssup() {
                 if(check.id){
                     if(confirm("voulez vous supprimer ?")){
                         $.ajax({
-                            url: "/digiCheckList/public/index/ajaxsup",
+                            url: "/digiCheckList/public/api/ajaxsup",
                             type: "post",
                             data: {id_todo: check.id},
                             success:function(data){
