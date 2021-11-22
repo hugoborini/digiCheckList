@@ -63,7 +63,7 @@
 }
 
 .containerAdd{
-    background-color:#041A55;
+    background-color: #344FA1;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -106,8 +106,17 @@
     border: none;
     font-size: 60px;
     font-family: 'Poppins', sans-serif;
+    outline: none;
+    background-color: #344FA1;
+    text-align: center;
+    color: white;
 }
 
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255,255, 0.7);
+
+
+  }
 .footerAdd{
     height: 20%;
     display: flex;
@@ -121,7 +130,11 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     border-radius: 20px;
-    background-color: #EB04FE;
+    background-color: #30A05F;
+    outline: none;
+    border: none;
+    box-shadow: 0px;
+
 }
 
 .sup{
